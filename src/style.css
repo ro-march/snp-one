@@ -1,0 +1,46 @@
+html, body, #root {
+	width: 100%;
+	height: 100%;
+	background-color: #ecf0f1;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+
+	.hello {
+		overflow: hidden;
+		font-family: 'VT323', monospace;
+		letter-spacing: .15em;
+		white-space: nowrap;
+		align-self: center;
+		font-size: 40px;
+		padding: 20px;
+		color: #2c3e50;
+		cursor: pointer;
+		user-select: none;
+		animation: typing 1.5s steps(15, end);
+
+		&:hover {
+			background-color: #e5e9ea;
+		}
+
+		.tag {
+			padding: 0 15px 0 15px;
+
+			&:first-child {
+				color: #e74c3c;
+			}
+
+			&:last-child {
+				color: #2ecc71;
+			}
+		}
+	}
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 350px }
+}
